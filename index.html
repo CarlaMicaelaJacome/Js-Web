@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPENSES Management</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+    
+        <nav>
+    
+            <h1 class="Page-Title"> <b>EXPENSES MANAGEMENT</b></h1>
+    
+        </nav>
+        
+        <div class= "Main-Box" class="Gradient">
+    
+             <div class="Available-Box">
+                <h3 class="Titles">Available</h3>
+                <p class="Available-P" id="Available">630</p>
+            </div>
+    
+            <div class="Incomes-box">
+    
+                <h3 class="Titles">Incomes</h3>
+                <p class="Incomes-P" id="Incomes">715</p>
+    
+            </div>
+    
+             <div class="Expenses-box">
+    
+                <h3 class="Titles">Expenses</h3>
+    
+                    <p class="Expenses-P" id="Expenses">85</p>
+    
+                </div>
+    
+        </div>
+    
+        <div class="Record-Box">   
+    
+            <div class="Record-Item">
+    
+                <h2 class="Titles">History</h2>
+    
+            </div>
+    
+            <ul class="Record-Item" id="Record">
+        </div>
+    
+        <div class="Add-box">
+            <div class="New-Item">
+                <h2 class="Titles">Add Transaction</h2>
+        </div>
+        
+        <div class="New-Item">
+    
+            <form class="Form-Box" id="Transaction" onsubmit="saveSubmit(event)">
+    
+                <div class="Concept">
+                    <a class="Requirement">Concept</a>
+    
+                        <input type="text" maxlength="25" id="Concept" placeholder="Max 25 Characters">
+    
+                </div>
+    
+                <div class="Amount">
+    
+                    <a class="Requirement">Amount</a>
+    
+                        <input type="number" step="0.01" id="Amount" placeholder="Incomes or -Expenses" required="">
+    
+                </div>
+    
+                <div class="Send">
+    
+                    <input type="Submit" value="Add Transaction">
+    
+                </div>
+    
+            </form>
+    
+        </div>
+    
+    </main>
+    
+</body>
+</html>
